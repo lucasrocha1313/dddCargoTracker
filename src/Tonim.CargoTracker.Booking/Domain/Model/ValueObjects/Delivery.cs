@@ -1,13 +1,17 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using Tonim.CargoTracker.Booking.Domain.Model.Entities;
 
 namespace Tonim.CargoTracker.Booking.Domain.Model.ValueObjects
 {
     public class Delivery
     {
+        [Column("routing_status")]
         public RoutingStatus RoutingStatus { get; private set; }
+        [Column("transport_status")]
         public TransportStatus TransportStatus { get; private set; }
+        [Column("last_known_location_id")]
         public Location LastKnownLocation { get; private set; }
-
+        [Column("current_voyage_number")]
         public Voyage CurrentVoyage { get; private set; }
         public LastCargoHandledEvent LastEvent { get; private set; }
         public CargoHandlingActivity NextExpectedActivity { get; private set; }
