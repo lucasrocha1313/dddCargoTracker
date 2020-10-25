@@ -1,5 +1,5 @@
 using System;
-using Tonim.CargoTracker.Routing.Domain.Models.ValueObjects;
+using Tonim.CargoTracker.Booking.Domain.Model.Entities;
 
 namespace Tonim.CargoTracker.Booking.Domain.Model.ValueObjects
 {

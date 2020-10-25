@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Tonim.CargoTracker.Routing.Domain.Models.ValueObjects
+namespace Tonim.CargoTracker.Booking.Domain.Model.Entities
 {
     public class Location
     {
